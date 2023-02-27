@@ -10,17 +10,15 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 
 console.log(`Started refreshing ${commandFiles.length} application (/) commands.`);
 for (const file of commandFiles) {
-    const filePath = path.join(commandsPath, file);
-    const command = require(filePath);
-    client.commands.set(command.data.name, command);
-    }
+	const filePath = path.join(commandsPath, file);
+	const command = require(filePath);
+	client.commands.set(command.data.name, command);
+}
 console.log(`Successfully reloaded ${commandFiles.length} application (/) commands.`);
 client.login(token);
 
 
-
-
-/*const { REST, Routes } = require('discord.js');
+/* const { REST, Routes } = require('discord.js');
 const { clientId, guildId, token } = require('../config.json');
 const fs = require('node:fs');
 
