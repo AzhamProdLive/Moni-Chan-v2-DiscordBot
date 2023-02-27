@@ -57,4 +57,3 @@ client.on('ready', () => {
 		console.log('Client user not yet available');
 	}
 });
-// Code above tries to handle the /events folder ! It works, kinda

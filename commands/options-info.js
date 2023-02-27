@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('options-info')
+		.setName('monisays')
 		.setDescription('Make Moni-Chan say something!')
 		.addStringOption(option => option.setName('input').setDescription('The input to echo back')),
 	async execute(interaction) {
