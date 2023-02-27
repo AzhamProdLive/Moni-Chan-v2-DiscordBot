@@ -1,0 +1,12 @@
+#Ephemeral responses
+You may not always want everyone who has access to the channel to see a slash command's response. Previously, you would have had to DM the user to achieve this, potentially encountering the high rate limits associated with DM messages, or simply being unable to do so, if the user's DMs were disabled.
+
+Thankfully, Discord provides a way to hide response messages from everyone but the executor of the slash command. This type of message is called an ephemeral message and can be set by providing ephemeral: true in the InteractionReplyOptions, as follows:
+
+client.on(Events.InteractionCreate, async interaction => {
+	if (!interaction.isChatInputCommand()) return;
+
+	if (interaction.commandName === 'ping') {
+		await interaction.reply({ content: 'Secret Pong!', ephemeral: true });
+	}
+});
