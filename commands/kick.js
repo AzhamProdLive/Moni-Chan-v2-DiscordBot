@@ -16,7 +16,7 @@ module.exports = {
 	execute: async function(interaction) {
 		const { channel, options } = interaction;
 		const user = options.getUser('target');
-		const reason = options.getString('reason');
+		const reason = options.getString('reason') || 'No reason provided';
 		const member = await interaction.guild.members.fetch(user.id);
 		const errEmbed = new EmbedBuilder()
 			.setDescription('You do not have permission to kick this user, since they have a higher role!')
@@ -27,7 +27,7 @@ module.exports = {
 		await member.kick(reason);
 
 		const embed = new EmbedBuilder()
-			.setDescription(`Successfully kicked ${user} from the server for the following reason : ${reason}!`)
+			.setDescription(`Successfully kicked ${user} from the server for the following reason : ${reason}`)
 			.setColor(0x00ff00);
 		await interaction.reply({ embeds: [embed] });
 	},
