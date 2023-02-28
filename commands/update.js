@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, PermissionFlagsBits, ActivityType, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits, ActivityType } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -12,8 +12,7 @@ module.exports = {
 					option.setName('type')
 						.setDescription('Pick an activity')
 						.setRequired(true)
-						.addChoices(
-							{ name: 'Playing', value: 'Playing' },
+						.addChoices({ name: 'Playing', value: 'Playing' },
 							{ name: 'Streaming', value: 'Streaming' },
 							{ name: 'Listening', value: 'Listening' },
 							{ name: 'Watching', value: 'Watching' },
@@ -22,6 +21,7 @@ module.exports = {
 					option.setName('activity')
 						.setDescription('Set your current activity')
 						.setRequired(true)))
+
 		.addSubcommand(subcommand =>
 			subcommand.setName('status')
 				.setDescription('Update the bot\'s status')
@@ -38,6 +38,7 @@ module.exports = {
 		const { options } = interaction;
 		const sub = options.getSubcommand(['activity', 'status']);
 		const type = options.getString('type');
+		const activity = options.getString('activity');
 
 		try {
 			switch (sub) {
@@ -67,7 +68,7 @@ module.exports = {
 
 		}
 		catch (error) {
-			console.error(error);
+			console.log(error);
 		}
 		return interaction.reply({ content: 'Successfully updated the bot\'s presence!', ephemeral: true });
 	},
