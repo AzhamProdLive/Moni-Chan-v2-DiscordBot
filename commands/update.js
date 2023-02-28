@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, PermissionFlagsBits, ActivityType } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits, ActivityType, EmbedBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -24,7 +24,7 @@ module.exports = {
 						.setRequired(true)))
 		.addSubcommand(subcommand =>
 			subcommand.setName('status')
-				.setDescription('Update the bot\'s activity')
+				.setDescription('Update the bot\'s status')
 				.addStringOption(option =>
 					option.setName('type')
 						.setDescription('Pick a status')
