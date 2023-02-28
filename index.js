@@ -43,17 +43,4 @@ client.on(Events.InteractionCreate, async interaction => {
 
 // Log in to Discord with your client's token
 client.login(token);
-client.on('ready', () => {
-	if (client.user) {
-		client.user.setPresence({
-			activity: {
-				name: 'With Maxxie !',
-				type: ActivityType.Watching,
-				url : 'https://github.com/AzhamProdLive' },
-			status: 'dnd',
-		});
-	}
-	else {
-		console.log('Client user not yet available');
-	}
-});
+
