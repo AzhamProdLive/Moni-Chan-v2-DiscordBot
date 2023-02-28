@@ -1,13 +1,22 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { EmbedBuilder } = require('@discordjs/builders');
 
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('avatar')
-		.setDescription('Get the avatar URL of the selected user, or your own avatar.')
-		.addUserOption(option => option.setName('target').setDescription('The user\'s avatar to show')),
+		.setDescription('Displays user avatar')
+		.addUserOption(option =>
+			option.setName('user')
+				.setDescription('The user to display the avatar of')
+				.setRequired(false)),
+
 	async execute(interaction) {
-		const user = interaction.options.getUser('target');
-		if (user) return interaction.reply(`${user.username}'s avatar: ${user.displayAvatarURL()}`);
-		return interaction.reply(`Your avatar: ${interaction.user.displayAvatarURL()}`);
+		const user = interaction.options.getUser('user') || interaction.user;
+		const avatarEmbed = new EmbedBuilder().addFields([
+			{ name: 'Avatar', value: `[Click here](${user.displayAvatarURL({ dynamic: true })})` },
+			{ name: 'Avatar URL', value: user.displayAvatarURL({ dynamic: true }) }],
+		);
+		await interaction.reply({ embeds: [avatarEmbed] });
 	},
 };
+
