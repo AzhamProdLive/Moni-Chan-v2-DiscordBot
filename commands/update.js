@@ -45,24 +45,24 @@ module.exports = {
 			case 'activity':
 				switch (type) {
 				case 'Playing':
-					client.user.setActivity(activity, { type: ActivityType.Playing });
+					interaction.client.user.setActivity(activity, { type: ActivityType.Playing });
 					break;
 				case 'Streaming':
-					client.user.setActivity(activity, { type: ActivityType.Playing });
+					interaction.client.user.setActivity(activity, { type: ActivityType.Playing });
 					break;
 				case 'Listening':
-					client.user.setActivity(activity, { type: ActivityType.Listening });
+					interaction.client.user.setActivity(activity, { type: ActivityType.Listening });
 					break;
 				case 'Watching':
-					client.user.setActivity(activity, { type: ActivityType.Watching });
+					interaction.client.user.setActivity(activity, { type: ActivityType.Watching });
 					break;
 				case 'Competing':
-					client.user.setActivity(activity, { type: ActivityType.Competing });
+					interaction.client.user.setActivity(activity, { type: ActivityType.Competing });
 					break;
 				}
 				break;
 			case 'status':
-				client.user.setPresence({ status: type });
+				interaction.client.user.setPresence({ status: type });
 				break;
 			}
 
