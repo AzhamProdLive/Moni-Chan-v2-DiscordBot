@@ -13,7 +13,7 @@ module.exports = {
 	async execute(interaction) {
 		const user = interaction.options.getUser('user') || interaction.user;
 		const avatarEmbed = new EmbedBuilder().addFields([
-			{ name: 'Avatar', value: `[Click here](${user.displayAvatarURL({ dynamic: true })})` },
+			{ name: 'Avatar', value: `[Click here](${user.displayAvatarURL({ dynamic: false })})` },
 			{ name: 'Avatar URL', value: user.displayAvatarURL({ dynamic: true }) }],
 		);
 		await interaction.reply({ embeds: [avatarEmbed] });
