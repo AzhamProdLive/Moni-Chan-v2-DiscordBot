@@ -29,7 +29,8 @@ module.exports = {
 		};
 		const splitPascal = (string, separator) => string.split(/(?=[A-U])/).join(separator);
 		const toPascalCase = (string, separator = false) => {
-			const pascal = string.charAt(0).toUpperCase() + string.slice(1).toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (match, chr) => chr.toUpperCase());4;
+			const pascal = string.charAt(0).toUpperCase() + string.slice(1).toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (match, chr) => chr.toUpperCase());
+			4;
 			return separator ? splitPascal(pascal, separator) : pascal;
 		};
 
@@ -38,10 +39,10 @@ module.exports = {
 		const embed = new EmbedBuilder()
 			.setColor('#b26050')
 			.setTitle(`Server Info for ${guild.name}`)
-			.setThumbnail(guild.iconURL({ size : 1024 }))
+			.setThumbnail(guild.iconURL({ size: 1024 }))
 			.setImage(guild.bannerURL({ size: 1024 }))
 			.addFields([
-				{ name: 'Description', value: `📝${guild.description || 'None' }` },
+				{ name: 'Description', value: `📝${guild.description || 'None'}` },
 				{
 					name: 'General',
 					value: [
@@ -50,56 +51,13 @@ module.exports = {
 						`👑 **Owner** <@${guild.owner}>`,
 						`🌍 **Language** ${new Intl.DisplayNames(['en'], { type: 'language' }).of(guild.preferredLocale)}`,
 						`💻 **Vanity URL** ${guild.vanityURLCode || 'None'}`,
-					].join('\n'),
-				},
-				{ name: 'Features', value: guild.features?.map(feature => `- ${toPascalCase(feature, ' ')}`)?.join('\n') || 'None', inline: true },
-				{	name: 'Security',
-					value: [
-						`🔐 **Verification Level** ${splitPascal(GuildVerificationLevel[guild.verificationLevel], ' ')}`,
-						`🔞 **Explicit Content Filter** ${splitPascal(GuildExplicitContentFilter[guild.explicitContentFilter], ' ')}`,
-						`🔞 **NSFW Level** ${splitPascal(GuildNSFWLevel[guild.nsfwLevel], ' ')}`,
+						`🔐 **Verification Level** ${toPascalCase(GuildVerificationLevel[guild.verificationLevel], ' ')}`,
+						`🔞 **Explicit Content Filter** ${toPascalCase(GuildExplicitContentFilter[guild.explicitContentFilter], ' ')}`,
+						`🔞 **NSFW Level** ${toPascalCase(GuildNSFWLevel[guild.nsfwLevel], ' ')}`,
 					].join('\n'),
 					inline: true,
 				},
-				{
-					name: `Members (${guild.memberCount})`,
-					value: [
-						`👤 **Users** ${guild.memberCount - botCount}`,
-						`🤖 **Bots** ${botCount}`,
-					].join('\n'),
-					inline: true,
-				},
-				{ name: `User roles (${maxDisplayRoles(userRoles)} of ${userRoles.length})`, value: userRoles.slice(0, maxDisplayRoles(userRoles)).join(' ') || 'None' },
-				{ name: `Bot roles (${maxDisplayRoles(managedRoles)} of ${managedRoles.length})`, value: managedRoles.slice(0, maxDisplayRoles(managedRoles)).join(' ') || 'None' },
-				{ name: `Channels, Threads and Categories (${totalChannels})`,
-					value: [
-						`📝 **Text Channels** ${getChannelTypeSize(ChannelType.GuildText, ChannelType.GuildForum, ChannelType.GuildNews)}`,
-						`📢 **Voice Channels** ${getChannelTypeSize(ChannelType.GuildVoice, ChannelType.GuildStageVoice)}`,
-						`🧵 **Threads** ${getChannelTypeSize(ChannelType.GuildPublicThread, ChannelType.GuildPrivateThread, ChannelType.GuildNewsThread)}`,
-						`📁 **Categories** ${splitPascal(GuildVerificationLevel[guild.VerificationLevel], ' ')}`,
-					].join('\n'),
-					inline: true,
-				},
-				{ name: `Emojis and Stickers (${emojis.cache.size + stickers.cache.size})`,
-					value: [
-						`📺 **Animated** ${emojis.cache.filter(emoji => emoji.animated).size}`,
-						`🗿 **Static** ${emojis.cache.filter(emoji => !emoji.animated).size}`,
-						`🖼️ **Stickers** ${stickers.cache.size}`,
-					].join('\n'),
-					inline: true,
-				},
-				{ name: `Nitro (${guild.premiumSubscriptionCount})`,
-					value: [
-						`🎉 **Tier** ${guild.premiumTier || 'None'}`,
-						`🎁 **Boosts** ${guild.premiumSubscriptionCount}`,
-						`🎁 **Boosters** ${guild.member.cache.filter(member => member.roles.premiumSubscriberRole).size}`,
-					].join('\n'),
-					inline: true,
-				},
-				{ name: 'Banner', value: guild.bannerURL() ? '** **' : 'None' },
-
 			]);
-		interaction.reply({ embeds: [embed] });
 	},
 };
 
