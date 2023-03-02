@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder, GuildMember } = require('discord.js');
 
 module.exports = {
 	'data': new SlashCommandBuilder()
@@ -23,8 +23,8 @@ module.exports = {
 				{ name: 'Roles', value: `${member.roles.cache.map(r => r).join('')}`, inline: false },
 				{ name: 'ID', value: user.id, inline: true },
 				{ name: 'Nickname', value: member.nickname || 'None', inline: true },
-				{ name: 'Joined Server', value: '<t:{parseInt(member.user.joinedAt / 1000)}:R>', inline: true },
-				{ name: 'Joined Discord', value: '<t:{parseInt(member.user.createdAt / 1000}:R>', inline: true },
+				{ name: 'Joined Server', value: `<t:${parseInt(GuildMember.joinedAt / 1000)}:R>`, inline: true },
+				{ name: 'Joined Discord', value: `<t:${parseInt(member.user.createdAt / 1000)}:R>`, inline: true },
 			])
 			.setFooter({ text: `Requested by ${interaction.user.tag}`, iconURL: interaction.user.displayAvatarURL() })
 			.setTimestamp();

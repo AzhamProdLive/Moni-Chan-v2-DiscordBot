@@ -46,18 +46,19 @@ module.exports = {
 				{
 					name: 'General',
 					value: [
-						`📃 **Created At** <t:${parseInt(guild.createdTimestamp / 1000)}:R>`,
-						`💳 **ID** ${guild.id}`,
-						`👑 **Owner** <@${guild.owner}>`,
-						`🌍 **Language** ${new Intl.DisplayNames(['en'], { type: 'language' }).of(guild.preferredLocale)}`,
-						`💻 **Vanity URL** ${guild.vanityURLCode || 'None'}`,
-						`🔐 **Verification Level** ${toPascalCase(GuildVerificationLevel[guild.verificationLevel], ' ')}`,
-						`🔞 **Explicit Content Filter** ${toPascalCase(GuildExplicitContentFilter[guild.explicitContentFilter], ' ')}`,
-						`🔞 **NSFW Level** ${toPascalCase(GuildNSFWLevel[guild.nsfwLevel], ' ')}`,
+						`📃 **Created At** : <t:${parseInt(guild.createdTimestamp / 1000)}:R>`,
+						`💳 **ID** : ${guild.id}`,
+						`👑 **Owner** : ${interaction.owner}`,
+						`🌍 **Language** : ${new Intl.DisplayNames(['en'], { type: 'language' }).of(guild.preferredLocale)}`,
+						`💻 **Vanity URL** : ${guild.vanityURLCode || 'None'}`,
+						`🔐 **Verification Level** : ${toPascalCase(GuildVerificationLevel[guild.verificationLevel], ' ')}`,
+						`🔞 **Explicit Content Filter** : ${toPascalCase(GuildExplicitContentFilter[guild.explicitContentFilter], ' ')}`,
+						`🔞 **NSFW Level** : ${toPascalCase(GuildNSFWLevel[guild.nsfwLevel], ' ')}`,
 					].join('\n'),
 					inline: true,
 				},
 			]);
+		await interaction.reply({ embeds: [embed] });
 	},
 };
 
