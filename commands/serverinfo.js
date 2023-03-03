@@ -8,11 +8,8 @@ module.exports = {
 
 	async execute(interaction) {
 		const { guild } = interaction;
-		const { members, channels, emojis, roles, stickers } = guild;
+		const { members, channels, roles } = guild;
 		const sortedRoles = roles.cache.map(role => roles).slice(1, roles.cache.size).sort((a, b) => b.position - a.position);
-		const userRoles = sortedRoles.filter(role => !role.managed);
-		const managedRoles = sortedRoles.filter(role => role.managed);
-		const botCount = members.cache.filter(member => member.user.bot).sizeM;
 		const maxDisplayRoles = (roles, maxFieldLength = 1024) => {
 			let totalLength = 0;
 			const result = [];
@@ -48,7 +45,7 @@ module.exports = {
 					value: [
 						`📃 **Created At** : <t:${parseInt(guild.createdTimestamp / 1000)}:R>`,
 						`💳 **ID** : ${guild.id}`,
-						`👑 **Owner** : ${interaction.owner}`,
+						`👑 **Owner** : <@${guild.ownerId }>`,
 						`🌍 **Language** : ${new Intl.DisplayNames(['en'], { type: 'language' }).of(guild.preferredLocale)}`,
 						`💻 **Vanity URL** : ${guild.vanityURLCode || 'None'}`,
 						`🔐 **Verification Level** : ${toPascalCase(GuildVerificationLevel[guild.verificationLevel], ' ')}`,
