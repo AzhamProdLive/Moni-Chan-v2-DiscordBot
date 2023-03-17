@@ -1,6 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 
-
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('kick')
@@ -19,7 +18,7 @@ module.exports = {
 		const reason = options.getString('reason') || 'No reason provided';
 		const member = await interaction.guild.members.fetch(user.id);
 		const errEmbed = new EmbedBuilder()
-			.setDescription('You do not have permission to kick this user, since they have a higher role!')
+			.setDescription('I can`t kick this user, since they have a higher role ಥ⁠‿⁠ಥ !')
 			.setColor(0xff0000);
 		if (member.roles.highest.position >= interaction.member.roles.highest.position) {
 			return interaction.reply({ embeds: [errEmbed], ephemeral: true });
@@ -27,7 +26,7 @@ module.exports = {
 		await member.kick(reason);
 
 		const embed = new EmbedBuilder()
-			.setDescription(`Successfully kicked ${user} from the server for the following reason : ${reason}`)
+			.setDescription(`I have successfully kicked ${user} from the server for the following reason : ${reason}`)
 			.setColor(0x00ff00);
 		await interaction.reply({ embeds: [embed] });
 	},
