@@ -1,22 +1,3 @@
-/* const fs = require('node:fs');
-const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('../config.json');
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-
-client.commands = new Collection();
-const commandsPath = path.join(__dirname, '../commands');
-const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
-
-console.log(`Started refreshing ${commandFiles.length} application (/) commands.`);
-for (const file of commandFiles) {
-	const filePath = path.join(commandsPath, file);
-	const command = require(filePath);
-	client.commands.set(command.data.name, command);
-}
-console.log(`Successfully reloaded ${commandFiles.length} application (/) commands.`);
-client.login(token);*/
-
 // Commentary up there was a test that isn't going to be used, or maybe if really needed ig
 
 const { REST, Routes } = require('discord.js');
