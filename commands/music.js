@@ -41,7 +41,7 @@ module.exports = {
 			return interaction.reply({ embeds: [embed] });
 		}
 
-		if (!member.voice.channelId == guild.member.me.voice.channelId) {
+		if (!member.voice.channelId == guild.members.me.voice.channelId) {
 			embed.setTitle('I\'m already in a voice channel!');
 			embed.setColor('Red');
 			return interaction.reply({ embeds: [embed] });
