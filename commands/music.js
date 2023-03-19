@@ -36,7 +36,7 @@ module.exports = {
 		const embed = new EmbedBuilder();
 
 		if (!voiceChannel) {
-			embed.setTitle('You are not in a voice channel!');
+			embed.setTitle('You are not in a voice channel~!');
 			embed.setColor('Red');
 			return interaction.reply({ embeds: [embed] });
 		}
@@ -56,7 +56,7 @@ module.exports = {
 				const queue = await interaction.client.distube.getQueue(voiceChannel);
 
 				if (!queue) {
-					embed.setTitle('There is no music playing!');
+					embed.setTitle('There is no music playing silly!');
 					embed.setColor('Red');
 					return interaction.reply({ embeds: [embed] });
 				}
