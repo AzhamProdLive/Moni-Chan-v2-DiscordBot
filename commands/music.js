@@ -56,7 +56,7 @@ module.exports = {
 				const queue = await interaction.client.distube.getQueue(voiceChannel);
 
 				if (!queue) {
-					embed.setTitle('There is no music playing silly!');
+					embed.setTitle('There is no music playing!');
 					embed.setColor('Red');
 					return interaction.reply({ embeds: [embed] });
 				}
