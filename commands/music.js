@@ -52,6 +52,7 @@ module.exports = {
 			case 'play':
 				interaction.client.distube.play(voiceChannel, query, { textChannel: channel, member: member });
 				return interaction.reply({ content: `🎵 Playing ${query}! 🎵` });
+
 			case 'options':
 				const queue = await interaction.client.distube.getQueue(voiceChannel);
 
