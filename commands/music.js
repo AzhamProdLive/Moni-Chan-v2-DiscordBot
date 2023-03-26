@@ -87,6 +87,7 @@ module.exports = {
 
 			}
 		}
+
 		catch (err) {
 			console.error(err);
 			return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: false });
