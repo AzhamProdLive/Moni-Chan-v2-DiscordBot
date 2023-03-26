@@ -2,7 +2,8 @@
 
 ## Supported Versions
 
-Node v18 and + 
+Node v18 and + ;
+
 DiscordJS
 
 | Version | Supported          |
