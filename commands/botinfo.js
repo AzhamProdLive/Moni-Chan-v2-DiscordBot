@@ -1,8 +1,9 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
+const { hyperlink, hideLinkEmbed } = require('discord.js');
 const cpuStat = require('cpu-stat');
-const os = require('os');
-
+const url = 'https://discord.gg/XKs9YUXdbE';
+const link = hyperlink('Support Server !', url);
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('stats')
@@ -24,6 +25,7 @@ module.exports = {
 					{ name: 'Discord.js Version', value: `v${require('discord.js').version}`, inline: true },
 					{ name: 'Developer', value: 'Maximus Decimus#3263', inline: true },
 					{ name: 'Bot Ping', value: (interaction.client.ws.ping) + 'ms', inline: true },
+					{ name: 'Bot Server', value: link, inline: true },
 				)
 				.setFooter({ text: 'Made by Maximus Decimus#3263' })
 				.setTimestamp();
@@ -31,3 +33,4 @@ module.exports = {
 		});
 	},
 };
+
