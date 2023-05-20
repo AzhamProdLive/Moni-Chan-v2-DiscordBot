@@ -11,7 +11,7 @@ module.exports = {
 		const user = interaction.options.getUser('user');
 		const embed = new EmbedBuilder()
 			.setTitle(`${interaction.user.username} kissed ${user.username}!`)
-			.setImage('https://tenor.com/view/anime-hug-kiss-cheek-kiss-chuu-gif-25299966')
+			.setImage('https://media.tenor.com/GAr1rMm39pcAAAAC/anime-hug.gif')
 			.setColor('#FF0000');
 		await interaction.reply({ embeds: [embed] });
 	},
