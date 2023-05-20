@@ -20,7 +20,7 @@ module.exports = {
 					{ name: 'Uptime', value: `${Math.floor(process.uptime() / 3600)} hours, ${Math.floor(process.uptime() / 60)} minutes, ${Math.floor(process.uptime() % 60)} seconds`, inline: true },
 					{ name: 'RAM Usage', value: `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, inline: true },
 					{ name: 'CPU Usage', value: `${(process.cpuUsage().system / 1024 / 1024).toFixed(2)}%`, inline: true },
-					{ name: 'Operating System', value: `Arch Linux`, inline: true },
+					{ name: 'Operating System', value: 'Arch Linux', inline: true },
 					{ name: 'Node.js Version', value: `${process.version}`, inline: true },
 					{ name: 'Discord.js Version', value: `v${require('discord.js').version}`, inline: true },
 					{ name: 'Developer', value: 'Maximus Decimus#3263', inline: true },

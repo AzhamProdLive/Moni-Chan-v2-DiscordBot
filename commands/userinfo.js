@@ -18,9 +18,10 @@ module.exports = {
 		const userEmbed = new EmbedBuilder()
 			.setColor('Blue')
 			.setAuthor({ name: tag, iconURL: icon })
+			.setThumbnail(icon)
 			.addFields([
 				{ name: 'Username', value: `${user}`, inline: false },
-				{ name: 'Roles', value: `${member.roles.cache.map(r => r).join('')}`, inline: false },
+				{ name: 'Roles', value: `${member.roles.cache.map(r => r).join(' ')}`, inline: false },
 				{ name: 'ID', value: user.id, inline: true },
 				{ name: 'Nickname', value: member.nickname || 'None', inline: true },
 				{ name: 'Joined Server', value: `<t:${parseInt(member.joinedAt / 1000)}:R>`, inline: true },
