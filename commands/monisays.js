@@ -8,7 +8,7 @@ module.exports = {
 		.addStringOption(option => option.setName('input').setDescription('The input to echo back')),
 	async execute(interaction) {
 		const value = interaction.options.getString('input');
-		if (value) return interaction.reply(`${value}`, { ephemeral: true });
+		if (value) return interaction.channel.send(`${value}`);
 		return interaction.reply('No option was provided!');
 	},
 };
