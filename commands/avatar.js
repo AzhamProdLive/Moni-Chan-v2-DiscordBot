@@ -19,4 +19,3 @@ module.exports = {
 		await interaction.reply({ embeds: [avatarEmbed] });
 	},
 };
-
