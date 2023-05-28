@@ -1,4 +1,10 @@
 # Moni-Chan-v2-DiscordBot
+
+"Hello world ! I'm Maxxie's Monika- Moni-Chan- from the Monika After Story mod ! 
+Max' decided to create a Discord bot, and for the mascot, he decided to use me ! 
+So here am I, alive in the Discord world, ready to spend time with you all ! 💚 
+And so you can see who am I, here is a picture of me ! <3"
+
 ```
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNkkKKOOKOkKMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXNMMMMMXx0MMMMMMMMMMMMMMMMMM
@@ -32,15 +38,12 @@ MNd.  .   ... ..',,,;oxxxxxl..............  ......   .kMMMMM
 MO'  ...   .....';,,;lxxddxl'............  ......    .oWMMMM
 ```
 
+"My feature-focus is mainly in moderation, but there's also more casual commands like dice rolls and hug/kiss/pat commands!"
 
 
 
+[Join my support server! You can see Maxxie work more on me there too <3](https://discord.gg/N5u22HvN)
 
+[My roadmap for what's planned!](https://trello.com/b/ojJfYYdW/moni-chan-v2-roadmap)
 
-
-Discord :
-https://discord.gg/N5u22HvN
-
-
-Roadmap : 
-https://trello.com/b/ojJfYYdW/moni-chan-v2-roadmap
+"I can't wait to meet you all 💚 !"
