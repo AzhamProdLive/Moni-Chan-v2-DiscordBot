@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('discord.js');
-const { hyperlink, hideLinkEmbed } = require('discord.js');
+const { hyperlink } = require('discord.js');
 const cpuStat = require('cpu-stat');
 const url = 'https://discord.gg/XKs9YUXdbE';
 const link = hyperlink('Support Server !', url);
@@ -8,8 +8,8 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('stats')
 		.setDescription('Shows the stats of the bot'),
-	execute(interaction, client) {
-		cpuStat.usagePercent(function(err, percent) {
+	execute(interaction) {
+		cpuStat.usagePercent(function(err) {
 			if (err) return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 
 			const embed = new EmbedBuilder()
@@ -23,7 +23,7 @@ module.exports = {
 					{ name: 'Operating System', value: 'Arch Linux', inline: true },
 					{ name: 'Node.js Version', value: `${process.version}`, inline: true },
 					{ name: 'Discord.js Version', value: `v${require('discord.js').version}`, inline: true },
-					{ name: 'Developer', value: 'Maximus Decimus#3263', inline: true },
+					{ name: 'Developer', value: 'Maximus Decimus#3263 & DJMayJay#2001', inline: true },
 					{ name: 'Bot Ping', value: (interaction.client.ws.ping) + 'ms', inline: true },
 					{ name: 'Bot Server', value: link, inline: true },
 				)
