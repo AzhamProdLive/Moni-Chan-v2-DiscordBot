@@ -1,45 +1,35 @@
 # Moni-Chan-v2-DiscordBot
 ```
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMKddOKOod0Okx0NMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0kXMMMNXNNKooKMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNWMMMMMMMNkkNMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0ONMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNXKXXK000K0OOkkOKKOKWMMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKdc;,;::;,,;;;;;,',;:lxk0NWMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMXx:;;:::::;;;;;;;,,,,,,,,,;ldxkKNWMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMMMWXxlllllcc:::::;;;;;;;;;;,,,,;;,,;cd0NMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMMMWX0kxdllccccc::;;;;;;;;;;;;;,,'',;,,,',ckNMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMWX0kxddolccccc::;;;;;;;;;;;;;;,,,'',;;,,'.'oKMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMN0xddoolllcccc::;;;;;;;;;;;;;;;,,,,'';;,,,'..lXMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMWXkdoollcllllccc:::;;;;;;;;;;;;;;;,',,';:,'','.'dNMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMWKxoolllccccccccc:::;;;;;;;;;;;,,,,,'''',:;'.',..;0MMMMMMMMMM
-MMMMMMMMMMMMMMMMMMW0dlllllcccccc::::::::::;;;;;;;,,,,,,,'..,:;'.','.'xWMMMMMMMMM
-MMMMMMMMMMMMMMMMMW0dollllccccc::::::::;:::::;;;;;;,,'',,,..,;,'.','..dWMMMMMMMMM
-MMMMMMMMMMMMMMMMW0doollllccccc:::::::;;;;;;;;,,;;;;,''',,..';'..',...oNMMMMMMMMM
-MMMMMMMMMMMMMMMWKxoollllccccc::;;:::;;;;;;;;;,',,,,,...''..,,'.'''...dWMMMMMMMMM
-MMMMMMMMMMMMMMMXxooolllc:cccc:;;;:;;;;;,,,,,,,''',,''.....','..''....dWMMMMMMMMM
-MMMMMMMMMMMMMMNOxxdllll:;;;::;,,',;;;;,,,,,,,,,'.''''....':lcll:,'..,dNMMMMMMMMM
-MMMMMMMMMMMMMWKOXKdlcll::;;:c;,;'.,,,;,'''''''''..'''...'lkOkkkxdxdlckWMMMMMMMMM
-MMMMMMMMMMMMMN0KWXxcclc:c:,,:,,:;'',,;,'',''''''.......'lkOkkxxkkkOxoOWMMMMMMMMM
-MMMMMMMMMMMMMNKNMXxcclc::;'....,::;;,,;'';:;,,''.......;xOkxxdxxxxkkOXMMMMMMMMMM
-MMMMMMMMMMMMMNXWMW0c:cccoxo'.  .,looc;;,.,loccc,'......,okxxdddxdxkkkXMMMMMMMMMM
-MMMMMMMMMMMMMMWMMMXd:::cdkdc:;;cdxxxxdl:,,cddol:,.......,dkxxxxxxkkodXMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMW0l:ccoxxxxdxxxxxxxxxolc:oddo:..    ..':oddxxoll:,oNMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMWkcoxxxkkkkkkxxxxxxxxxdoddxxl,....,,.'',,,,,.....oNMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMN0xoxOkkkkkkkkxxxxxxxxxxxdddollccol,'':c;;;......lNMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMXOxclOOkkkkkkkkkxxxxxxxxxxddddoool:;;,col:'......lNMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMWOkd,:dOOkkkkkkkkxxxxxxxxxxdddddddoooooloo,.......cXMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMXxdl,,:xOOkkkkkkkkxxxxxxxxxxdddooxdooooooc........;0MMMMMMMMMM
-MMMMMMMMMMMMMMMMMWOc:;''.;dkOkkkkkkxxxxxxxxxxxdooodxxolool:.........'kMMMMMMMMMM
-MMMMMMMMMMMMMWNXKk:....'..'cxkkkkkkxxxxxxxxo:;,;cdxkxdooc'...........dWMMMMMMMMM
-MMMMMMMMMMMXxc,........'....;dkkkkkkkkkxxdc.......,:odo:'. .. .......cXMMMMMMMMM
-MMMMMMMMMMXc.     .....,'...;oddxkkxxxdlc,...........''......   .....,OMMMMMMMMM
-MMMMMMMMMK:. .........','..,oxxdddddooc......................      ...oWMMMMMMMM
-MMMMMMMWXd.  .... ....,,'''lkkkkkxxxxl'...............  ...    ...    ;KMMMMMMMM
-MMMMWKd:'.   .... ....,,'''cxkkkkkkkx;. ..................    ......  .dWMMMMMMM
-MMMXo..      ....  ...',,,':dxkkkkkkd, .................    .......    ;KMMMMMMM
-MMK:  ....    ....  ..,;,,',lxxxxxxxd;.................   .......      .xWMMMMMM
-MWd.   ....    .......,;;,,'cxxxdodddc................  .........      .lNMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNkkKKOOKOkKMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXNMMMMMXx0MMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKKWMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMWXOkkkkxkkxxdxkkOXWMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMWKd:;;;;;,,;;;,,,,;cokOKNWMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMW0dlclcc:::::;;;;;;,,,;;;cdOXWMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMWXOxdlcccc::;;;;;;;;;;,,,,,,,,:xNMMMMMMMMM
+MMMMMMMMMMMMMMMMWXOxdollccc::;;;;;;;;;;;,,,,,;,,''oXMMMMMMMM
+MMMMMMMMMMMMMMMN0xollllllcc::;;;;;;;;;;;,,,,,;,''.'xWMMMMMMM
+MMMMMMMMMMMMMMNOolllccccccc::::;;;;;;,,,,,'',;,'''.:KMMMMMMM
+MMMMMMMMMMMMMXkolllcccc:::::::::;;;;;,,,,,'.';,.''.,kMMMMMMM
+MMMMMMMMMMMMNkollllccc::::::;;;;;;,,;;,''''.','.''.'kMMMMMMM
+MMMMMMMMMMMNOoolllcccc:;;:;;;;;;;;,',,,'..'.',..'..'kMMMMMMM
+MMMMMMMMMMW0xdlllc::::;,,;;;;,,,,,,'''''...';::;'..,kWMMMMMM
+MMMMMMMMMMX00klll::;::;,'',;,'''''''..''..,oxkkxoolcOMMMMMMM
+MMMMMMMMMWXXNklcc::,',,;;,,,,,,,,'''.....'lkkxxxkkxxKMMMMMMM
+MMMMMMMMMWNNW0lcccl:....:lc;;,':c:;,'....,okxddxxxkONMMMMMMM
+MMMMMMMMMMWMMNd::cddc;;:oxxdl:,;odo:'.....;dkxxxxkdxNMMMMMMM
+MMMMMMMMMMMMMWKl:ldxxxxxxxxxxolloddc.. ...':llol::,oNMMMMMMM
+MMMMMMMMMMMMMMNkoxkkkkkkkxxxxxxxddxo:,,:;'';;,'....oNMMMMMMM
+MMMMMMMMMMMMMMXkookOkkkkkxxxxxxxxddddooo:;;ll:'....lNMMMMMMM
+MMMMMMMMMMMMMW0d::dOkkkkkkxxxxxxxxddddddooool,.....lXMMMMMMM
+MMMMMMMMMMMMMXdc;';dkOkkkkkxxxxxxxddooxdoool;......:0MMMMMMM
+MMMMMMMMMWNK0l'..'.'cxkkkkxxxxxxdc;;coxxooc'.......,kMMMMMMM
+MMMMMMMW0c,......'...cxkkkkkxxdc'.....,cl:.... .....oNMMMMMM
+MMMMMMWk'  ......''.'lddxxddo;................  ....:KMMMMMM
+MMMMWNO,  ......',''cxkkxxxd;................   .   .xWMMMMM
+MMW0l,.   ..  ..',,'cxkkkkkl. .............    ....  :XMMMMM
+MNd.  .   ... ..',,,;oxxxxxl..............  ......   .kMMMMM
+MO'  ...   .....';,,;lxxddxl'............  ......    .oWMMMM
 ```
 
 
