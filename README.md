@@ -42,7 +42,7 @@ MO'  ...   .....';,,;lxxddxl'............  ......    .oWMMMM
 
 
 
-[Join my support server! You can see Maxxie work more on me there too <3](https://discord.gg/N5u22HvN)
+[Join my support server! You can see Maxxie work more on me there too <3](https://discord.gg/XKs9YUXdbE)
 
 [My roadmap for what's planned!](https://trello.com/b/ojJfYYdW/moni-chan-v2-roadmap)
 
