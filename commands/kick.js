@@ -18,7 +18,7 @@ module.exports = {
 		const reason = options.getString('reason') || 'No reason provided';
 		const member = await interaction.guild.members.fetch(user.id);
 		const errEmbed = new EmbedBuilder()
-			.setDescription('I can`t kick this user, since they have a higher role ಥ⁠‿⁠ಥ !')
+			.setDescription('I can`t kick this user, since they have a higher role !')
 			.setColor(0xff0000);
 		if (member.roles.highest.position >= interaction.member.roles.highest.position) {
 			return interaction.reply({ embeds: [errEmbed], ephemeral: true });
@@ -31,4 +31,3 @@ module.exports = {
 		await interaction.reply({ embeds: [embed] });
 	},
 };
-
