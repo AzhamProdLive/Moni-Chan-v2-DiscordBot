@@ -10,11 +10,11 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('hug')
 		.setDescription('Hug someone!')
-		.addStringOption(option => option.setName('user').setDescription('The user to hug!')),
+		.addUserOption(option => option.setName('user').setDescription('The user to hug!')),
 	async execute(interaction) {
 		const user = interaction.options.getUser('user');
 		const embed = new EmbedBuilder()
-			.setTitle(`${interaction.user.username} hugged ${user}!`)
+			.setTitle(`${interaction.user.username} hugged ${user.username}!`)
 			.setImage(randomhugs[Math.floor(Math.random() * randomhugs.length)])
 			.setColor('#31d668');
 		await interaction.reply({ embeds: [embed] });

@@ -6,7 +6,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('pat')
 		.setDescription('Pat someone!')
-		.addStringOption(option => option.setName('user').setDescription('The user to pat!')),
+		.addUserOption(option => option.setName('user').setDescription('The user to pat!')),
 	async execute(interaction) {
 		const user = interaction.options.getUser('user');
 		const embed = new EmbedBuilder()
