@@ -5,3 +5,4 @@ config.json
 .eslintrc.json
 index.js
 commands/Non-used commands
+discloud.config
