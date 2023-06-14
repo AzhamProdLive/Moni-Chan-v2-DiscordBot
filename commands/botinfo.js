@@ -17,7 +17,7 @@ module.exports = {
 				.setColor('#31d668')
 				.addFields(
 					{ name: 'Server Count', value: `${interaction.client.guilds.cache.size}`, inline: true },
-					{ name: 'Uptime', value: `${Math.floor(process.uptime() / 3600)} hours, ${Math.floor((process.uptime() / 60) / 60)} minutes, ${Math.floor(process.uptime() % 60)} seconds`, inline: true },
+					{ name: 'Uptime', value: `${Math.floor(process.uptime() / 3600)} hours, ${Math.floor((process.uptime() / 60)) } minutes, ${Math.floor(process.uptime() % 60)} seconds`, inline: true },
 					{ name: 'RAM Usage', value: `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, inline: true },
 					{ name: 'CPU Usage', value: `${(process.cpuUsage().system / 1024 / 1024).toFixed(2)}%`, inline: true },
 					{ name: 'Operating System', value: 'Arch Linux', inline: true },
