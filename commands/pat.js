@@ -10,7 +10,7 @@ module.exports = {
 	async execute(interaction) {
 		const user = interaction.options.getUser('user');
 		const embed = new EmbedBuilder()
-			.setTitle(`${interaction.user.username} patted ${user}!`)
+			.setTitle(`${interaction.user.username} patted ${user.username}!`)
 			.setImage('https://media.discordapp.net/attachments/982114303702335518/1060657006630928498/image1.gif')
 			.setColor('#FF0000');
 		await interaction.reply({ embeds: [embed] });
