@@ -16,7 +16,7 @@
     "cpu-stat": "^2.0.1",
     "discord-logs": "^2.2.1",
     "discord.js": "^14.7.1",
-    "espree": "^9.4.1",
+    "espree": "^9.6.0",
     "ffmpeg-static": "^4.4.1",
     "libsodium-wrappers": "^0.7.11",
     "ms": "^2.1.3"
