@@ -10,7 +10,7 @@ module.exports = {
 	async execute(interaction) {
 		const user = interaction.options.getUser('user');
 		const embed = new EmbedBuilder()
-			.setTitle(`${interaction.user.username} kissed ${user}!`)
+			.setTitle(`${interaction.user.username} kissed ${user.username}!`)
 			.setImage('https://media.tenor.com/GAr1rMm39pcAAAAC/anime-hug.gif')
 			.setColor('#FF0000');
 		await interaction.reply({ embeds: [embed] });

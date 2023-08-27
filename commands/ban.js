@@ -19,10 +19,10 @@ module.exports = {
 		}
 		if (member.bannable) {
 			await member.ban({ reason: reason });
-			return interaction.reply({ content: `${user.tag} has been banned.`, ephemeral: false });
+			return interaction.reply({ content: `${user.username}.chr has been deleted. (${user.username} has been banned for the following reason : ${reason}.`, ephemeral: false });
 		}
 		else {
-			return interaction.reply({ content: `I can't ban ${user.tag}, check if they have an higher role than you and me !`, ephemeral: true });
+			return interaction.reply({ content: `I can't ban ${user.username}, check if they have an higher role than you and me !`, ephemeral: true });
 		}
 	},
 
