@@ -1,3 +1,9 @@
+*Due of my Discord account being terminated, the project is now considered "dead", as I can't work on it anymore. Thanks for the support everyone*
+
+
+
+
+
 # Moni-Chan-v2-DiscordBot
 
 "Hello world ! I'm Maxxie's Monika- Moni-Chan- from the Monika After Story mod ! 
