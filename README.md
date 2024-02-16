@@ -1,8 +1,6 @@
-/!\ Feb 3 2024 : Repository unarchived, the Discord might go through a full revamp and reorganisation. /!\
+## /!\ Feb 16 2024 : Project and Discord bot currently rebranding, a lot of stuff is going to change soon. /!\ 
 
-
-
-
+Feb 3 2024 : *Repository unarchived, the Discord might go through a full revamp and reorganisation.* 
 
 Nov 23 2023 : *Due of my Discord account being terminated, the project is now considered "dead", as I can't work on it anymore. Thanks for the support everyone*
 
