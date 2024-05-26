@@ -15,7 +15,7 @@
     "@eslint/eslintrc": "^1.4.1",
     "cpu-stat": "^2.0.1",
     "discord-logs": "^2.2.1",
-    "discord.js": "^14.15.1",
+    "discord.js": "^14.15.2",
     "espree": "^9.4.1",
     "ffmpeg-static": "^4.4.1",
     "libsodium-wrappers": "^0.7.13",
