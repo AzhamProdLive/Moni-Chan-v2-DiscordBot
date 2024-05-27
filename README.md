@@ -1,4 +1,6 @@
-## /!\ Feb 16 2024 : Project and Discord bot currently rebranding, a lot of stuff is going to change soon. /!\ 
+## /!\ May 27 2024 : Ideas about merging with SpaceLogger or having both bots running for differents purposes is currently being brainstormed, stay tuned for updates. /!\
+
+/!\ Feb 16 2024 : *Project and Discord bot currently rebranding, a lot of stuff is going to change soon.* /!\ 
 
 Feb 3 2024 : *Repository unarchived, the Discord might go through a full revamp and reorganisation.* 
 
